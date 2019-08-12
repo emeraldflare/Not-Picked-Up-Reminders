@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Conditional Notifications</Name>
+  <Author>Andrew Morgan</Author>
+  <Version>1.0.29</Version>
+  <Active>True</Active>
+  <Type>Server</Type>
+  <Description>Sends conditional notification e-mails for requests in the Request Conditionalized queue.</Description>
+  <Forms />
+  <Settings>
+    <Setting name="EmailArticle" value="Lending--Conditional Notification (Article)" type="string">
+      <Description>Name of the conditional e-mail notification template for articles.</Description>
+    </Setting>
+    <Setting name="EmailLoan" value="Lending--Conditional Notification (Loan)" type="string">
+      <Description>Name of the conditional e-mail notification template for loans.</Description>
+    </Setting>
+    <Setting name="Exclusions" value="" type="string">
+      <Description>NVTGCs to exclude from Conditional Notifications. Enclose in single quotes, and separate multiple NVTGCs with commas. Example: 'ex1', 'ex2', 'ex3'</Description>
+    </Setting>
+  </Settings>
+  <Files>
+    <File>Conditional Notifications.lua</File>
+  </Files>
+</Configuration>
